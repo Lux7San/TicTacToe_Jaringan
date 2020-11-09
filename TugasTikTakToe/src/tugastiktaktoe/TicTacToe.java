@@ -256,7 +256,7 @@ public class TicTacToe implements Runnable{
             dos = new DataOutputStream(socket.getOutputStream());
             dis = new DataInputStream(socket.getInputStream());
             accepted = true;
-            System.out.println("CLIENT HAS REQUESTED TO JOIN, AND WE HAVE ACCEPTED");
+            System.out.println("CLIENT HAS REQUESTED TO JOIN, AND WE HAVE ACClEPTED");
             
         } catch (IOException e) {
             e.printStackTrace();
@@ -266,11 +266,11 @@ public class TicTacToe implements Runnable{
     
     private void loadImages() {
         try {
-            board = ImageIO.read(getClass().getResourceAsStream("res/board.png"));
-            redX = ImageIO.read(getClass().getResourceAsStream("res/redX.png"));
-            redCircle = ImageIO.read(getClass().getResourceAsStream("res/redCircle.png"));
-            blueX = ImageIO.read(getClass().getResourceAsStream("res/blueX.png"));
-            blueCircle = ImageIO.read(getClass().getResourceAsStream("res/blueCircle.png"));
+            board = ImageIO.read(getClass().getResourceAsStream("board.png"));
+            redX = ImageIO.read(getClass().getResourceAsStream("redX.png"));
+            redCircle = ImageIO.read(getClass().getResourceAsStream("redCircle.png"));
+            blueX = ImageIO.read(getClass().getResourceAsStream("blueX.png"));
+            blueCircle = ImageIO.read(getClass().getResourceAsStream("blueCircle.png"));
         } catch (IOException e) {
             e.printStackTrace();
         }
